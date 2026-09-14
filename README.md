@@ -4,7 +4,7 @@ Open-source 3D-printable humanoid legs built around the same STS3215 serial bus 
 
 The SO-101 arm made low-cost robot arms something anyone can print and assemble at home. This project aims to do the same for a bipedal lower body: a pair of legs that use an SO-101 motor set, print on a consumer FDM printer, and give a cheap platform for learning bipedal control and collecting training data for learned (VLA-style) policies.
 
-**Status: early — CAD in progress, first parts printed.** Nothing here is finished or walking yet.
+**Status: work in progress.** The CAD is still changing between revisions, a few parts have been printed, and nothing has been assembled or walked yet. Treat everything here as a draft.
 
 ## Design goals
 
@@ -20,8 +20,7 @@ The SO-101 arm made low-cost robot arms something anyone can print and assemble 
 | Joint | Part(s) |
 |---|---|
 | Hip yaw | `hip_yaw_L`, `hip_yaw_R` |
-| Hip roll | `hip_roll_v2` |
-| Hip pitch | `hip_pitch`, `hip_upper_v3` |
+| Hip roll + pitch | `hip_roll_v2` (one module carries both servos) |
 | Knee | `leg_upper_v2`, `knee_collar`, `leg_lower_v2` |
 | Ankle / foot | `feet_v2` |
 
@@ -32,7 +31,7 @@ Shared: `pelvis`, `torso`.
 - `*.SLDPRT` / `*.SLDASM` — SolidWorks source. `nip_v2.SLDASM` is the current full assembly; `leg_assembly.SLDASM` / `lower_assem.SLDASM` are earlier single-leg assemblies.
 - `*.STL` — print-ready exports of the current parts.
 - `servo-motor_sts3215-v10.step` — STS3215 servo model used for fit checks.
-- Files without a version suffix or with `_v1` are superseded but kept for reference.
+- Files without a version suffix or with `_v1` are superseded but kept for reference. `hip_pitch` and `hip_upper*` are superseded: hip pitch now lives in the hip roll module.
 
 ## Printing
 
