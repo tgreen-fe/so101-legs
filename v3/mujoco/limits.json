@@ -1,0 +1,50 @@
+{
+  "limits_rad": {
+    "hip_yaw": [
+      -0.19198621771937624,
+      0.15707963267948966
+    ],
+    "hip_pitch": [
+      -1.3962634015954636,
+      1.9198621771937625
+    ],
+    "knee": [
+      -0.4537856055185257,
+      2.6179938779914944
+    ],
+    "ankle": [
+      -1.6231562043547265,
+      1.710422666954443
+    ]
+  },
+  "sweep": {
+    "hip_yaw": {
+      "deg": [
+        -11.0,
+        9.0
+      ],
+      "baseline_penetrating_points": 3
+    },
+    "hip_pitch": {
+      "deg": [
+        -80.0,
+        110.0
+      ],
+      "baseline_penetrating_points": 0
+    },
+    "knee": {
+      "deg": [
+        -26.0,
+        150.0
+      ],
+      "baseline_penetrating_points": 0
+    },
+    "ankle": {
+      "deg": [
+        -93.0,
+        98.0
+      ],
+      "baseline_penetrating_points": 0
+    }
+  }
+}

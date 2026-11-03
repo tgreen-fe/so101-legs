@@ -1,0 +1,7 @@
+Key changes into v2:
+
+- smaller feet
+- greater rotation range at knee
+- shorter lower leg
+- legs moved closer together by relocating (or removing at first) roll
+- removing roll, so legs are from hip down: hip_yaw -> hip_pitch -> knee_pitch -> ankle_pitch
